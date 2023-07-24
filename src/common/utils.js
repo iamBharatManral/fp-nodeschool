@@ -43,11 +43,21 @@ const numberOfLines = text => text.split("\n").length - 1
 
 const printEach = arr => arr.forEach(text => console.log(text))
 
+const createTCPServerTask = fn => (port, connectionListener) => {
+    return task(resolver => {
+        const server = fn(connectionListener)
+        server.on('error', resolver.reject)
+        server.listen(port, () => {
+            resolver.resolve(server)
+        })
+    })
+}
 
 module.exports = {
     tryCatch,
     tryCatchAsyncTask,
     numberOfLines,
     tryCatchGetRequest,
-    printEach
+    printEach,
+    createTCPServerTask
 }
