@@ -1,1 +1,1 @@
-[NodeSchool](https://nodeschool.io/) `learnyounode` Exercises in Functional Way ([Folktale](https://folktale.origamitower.com/))
+[nodeschool](https://nodeschool.io/)'s `learnyounode` exercises : A Functional Way ([Folktale](https://folktale.origamitower.com/))
