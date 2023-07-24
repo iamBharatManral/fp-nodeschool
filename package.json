@@ -1,0 +1,19 @@
+{
+  "name": "fp-node",
+  "version": "1.0.0",
+  "description": "Exercises from nodeschool.io using fp concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "fp",
+    "nodeschool"
+  ],
+  "author": "Bharat Manral",
+  "license": "ISC",
+  "dependencies": {
+    "folktale": "^2.3.2"
+  }
+}
